@@ -9,7 +9,10 @@ RUN apt update && \
     git \
     curl \
     alien \
-    telnet
+    telnet \
+    php5-dev \
+    php5-ldap \
+    php5-mysql \
 
 ADD oracle/*.rpm /
 
