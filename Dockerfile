@@ -29,6 +29,7 @@ RUN alien -i oracle-instantclient-basic-21.1.0.0.0-1.x86_64.rpm && \
 
 RUN echo 'instantclient,/usr/lib/oracle/21/client64/lib/' | pecl install oci8-2.0.12 && \
     echo 'extension=oci8.so' > /usr/src/php/php.ini-production && \  
-    echo 'extension=oci8.so' > /usr/src/php/php.ini-development  
+    echo 'extension=oci8.so' > /usr/src/php/php.ini-development && \
+    echo 'extension=oci8.so' > /usr/local/etc/php/conf.d/oci8.ini
 
 ENV DISPLAY=:99
