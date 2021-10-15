@@ -13,6 +13,8 @@ RUN apt-get update && apt-get install -y \
     libfreetype6-dev \
     locales \
     zip \
+    php5-dev \
+￼   php5-ldap \
     jpegoptim optipng pngquant gifsicle \
     vim \
     unzip \
