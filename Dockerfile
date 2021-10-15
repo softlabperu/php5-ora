@@ -12,7 +12,7 @@ RUN apt update && \
     telnet \
     php5-dev \
     php5-ldap \
-    php5-mysql \
+    php5-mysql 
 
 ADD oracle/*.rpm /
 
