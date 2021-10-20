@@ -1,7 +1,7 @@
 FROM php:5.4-apache
 
 RUN DEBIAN_FRONTEND="noninteractive" 
-RUN apt update && apt install -y tzdata php5-ldap php5-dev
+RUN apt update && apt install -y tzdata
 
 # Set working directory
 WORKDIR /var/www
