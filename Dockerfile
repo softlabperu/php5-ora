@@ -1,7 +1,7 @@
 FROM php:5.4-apache
 
 RUN DEBIAN_FRONTEND="noninteractive" 
-RUN apt update && apt install -y tzdata
+RUN apt-get update && apt install -y tzdata
 
 # Set working directory
 WORKDIR /var/www
@@ -20,6 +20,9 @@ RUN apt-get update && apt-get install -y \
     libaio1 \
     git \
     curl
+
+# Paqueetes php
+RUN apt-get install -y php5-common php5-ldap php5-dev pkg-php-tools php-pear php5-cli
 
 # Clear cache
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
